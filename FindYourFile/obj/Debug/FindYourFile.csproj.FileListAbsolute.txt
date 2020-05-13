@@ -1,0 +1,10 @@
+C:\Cs Projects\FindYourFile\FindYourFile\bin\Debug\FindYourFile.exe.config
+C:\Cs Projects\FindYourFile\FindYourFile\bin\Debug\FindYourFile.exe
+C:\Cs Projects\FindYourFile\FindYourFile\bin\Debug\FindYourFile.pdb
+C:\Cs Projects\FindYourFile\FindYourFile\obj\Debug\FindYourFile.csprojAssemblyReference.cache
+C:\Cs Projects\FindYourFile\FindYourFile\obj\Debug\FindYourFile.Properties.Resources.resources
+C:\Cs Projects\FindYourFile\FindYourFile\obj\Debug\FindYourFile.csproj.GenerateResource.cache
+C:\Cs Projects\FindYourFile\FindYourFile\obj\Debug\FindYourFile.csproj.CoreCompileInputs.cache
+C:\Cs Projects\FindYourFile\FindYourFile\obj\Debug\FindYourFile.exe
+C:\Cs Projects\FindYourFile\FindYourFile\obj\Debug\FindYourFile.pdb
+C:\Cs Projects\FindYourFile\FindYourFile\obj\Debug\FindYourFile.MainForm.resources
