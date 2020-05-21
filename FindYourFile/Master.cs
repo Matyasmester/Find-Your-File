@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using System.Diagnostics;
 using System.Windows.Forms;
 using System.IO;
 using System.Collections;
@@ -73,8 +73,8 @@ namespace FindYourFile
 
         public void CheckForFileNameErrors(RichTextBox InputBox, Label ErrorLabel, Button StartButton)
         {
-            //If its empty, disable the button
-            if (InputBox.Text == "")
+            //If its empty, or has a doublequote in it, disable the button
+            if (InputBox.Text == "" || InputBox.Text.Contains('"'))
             {
                 ErrorLabel.Visible = true;
                 StartButton.Enabled = false;
@@ -135,6 +135,11 @@ namespace FindYourFile
                 ErrorLabel.Visible = true;
                 return;
             }
+        }
+
+        public void OpenInExplorer(string path)
+        {
+            Process.Start(path);
         }
     }
 }

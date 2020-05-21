@@ -40,6 +40,8 @@
             this.CopyButton = new System.Windows.Forms.Button();
             this.GeneralErrorLabel = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.AutoOpenBox = new System.Windows.Forms.CheckBox();
+            this.PathOpenButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -144,7 +146,7 @@
             // 
             this.CopyButton.Location = new System.Drawing.Point(596, 386);
             this.CopyButton.Name = "CopyButton";
-            this.CopyButton.Size = new System.Drawing.Size(129, 26);
+            this.CopyButton.Size = new System.Drawing.Size(107, 26);
             this.CopyButton.TabIndex = 9;
             this.CopyButton.Text = "Copy to Clipboard";
             this.CopyButton.UseVisualStyleBackColor = true;
@@ -176,12 +178,37 @@
             this.label4.Text = "Copied To Clipboard!";
             this.label4.Visible = false;
             // 
+            // AutoOpenBox
+            // 
+            this.AutoOpenBox.AutoSize = true;
+            this.AutoOpenBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.AutoOpenBox.Location = new System.Drawing.Point(644, 207);
+            this.AutoOpenBox.Name = "AutoOpenBox";
+            this.AutoOpenBox.Size = new System.Drawing.Size(208, 20);
+            this.AutoOpenBox.TabIndex = 12;
+            this.AutoOpenBox.Text = "Auto open path in File Explorer";
+            this.AutoOpenBox.UseVisualStyleBackColor = true;
+            this.AutoOpenBox.CheckedChanged += new System.EventHandler(this.AutoOpenBox_CheckedChanged);
+            // 
+            // PathOpenButton
+            // 
+            this.PathOpenButton.Location = new System.Drawing.Point(709, 386);
+            this.PathOpenButton.Name = "PathOpenButton";
+            this.PathOpenButton.Size = new System.Drawing.Size(107, 26);
+            this.PathOpenButton.TabIndex = 13;
+            this.PathOpenButton.Text = "Open in Explorer";
+            this.PathOpenButton.UseVisualStyleBackColor = true;
+            this.PathOpenButton.Visible = false;
+            this.PathOpenButton.Click += new System.EventHandler(this.PathOpenButton_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1030, 480);
+            this.Controls.Add(this.PathOpenButton);
+            this.Controls.Add(this.AutoOpenBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.GeneralErrorLabel);
             this.Controls.Add(this.CopyButton);
@@ -215,6 +242,8 @@
         private System.Windows.Forms.Button CopyButton;
         private System.Windows.Forms.Label GeneralErrorLabel;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.CheckBox AutoOpenBox;
+        private System.Windows.Forms.Button PathOpenButton;
     }
 }
 
